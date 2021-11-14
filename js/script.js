@@ -1,29 +1,42 @@
-'use strict';
+//  Задание на урок:
 
-// let number = 4.6;
+// 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+// 'Сколько фильмов вы уже посмотрели?'
+const numberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?', '');
 
-// console.log(4 / 0);
+// 2) Создать объект personalMovieDB и в него поместить такие свойства:
+//     - count - сюда передается ответ на первый вопрос
+//     - movies - в это свойство поместить пустой объект
+//     - actors - тоже поместить пустой объект
+//     - genres - сюда поместить пустой массив
+//     - privat - в это свойство поместить boolean(логическое) значение false
 
-// alert('flex');
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
 
-// const result = confirm('Are you here?');
-// console.log(result);
+// 3) Задайте пользователю по два раза вопросы:
+//     - 'Один из последних просмотренных фильмов?'
+//     - 'На сколько оцените его?'
 
-// const answer = +prompt('Вам есть 18', '18');
-// console.log(typeof answer);
+const q1 = prompt('Один из последних просмотренных фильмов?', 'Brainstorm');
+const q2 = prompt('На сколько оцените его?');
+const q3 = prompt('Один из последних просмотренных фильмов?', 'Brainstorm');
+const q4 = prompt('На сколько оцените его?');
 
-const answers = [];
-answers[0] = prompt('как ваще имя');
-answers[1] = prompt('как ваше фамилия');
-answers[2] = prompt('Сколько вам лет');
+// Ответы стоит поместить в отдельные переменные
+// Записать ответы в объект movies в формате:
+//     movies: {
+//         'logan': '8.1'
+//     }
 
-document.write(answers);
+personalMovieDB.movies[q1] = q2;
+personalMovieDB.movies[q3] = q4;
 
-let incr = 10,
-  decr = 10;
+// Проверить, чтобы все работало без ошибок в консоли
 
-// incr++;
-// decr--;
-
-console.log(incr);
-console.log(decr);
+console.log(personalMovieDB);
