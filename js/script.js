@@ -1,22 +1,24 @@
 'use strict';
 
-if (4 == 4) {
-  console.log('ok!');
-} else {
-  console.log('Error!');
+//while
+let num = 50;
+
+while (num <= 55) {
+  console.log(num);
+  num++;
 }
 
-const a = false;
+//do
+do {
+  console.log(num);
+  num++;
+} while (num < 55);
 
-a ? console.log('true') : console.log('false');
-
-switch (num) {
-  case 49:
-    console.log('неверно');
-    break;
-  case 49:
-    console.log('неверно');
-    break;
-  default:
-    console.log('не в этот раз');
+//for
+for (let i = 0; i < 8; i++) {
+  if (i === 6) {
+    //break; - досрочная остановка цикла
+    //continue; -пропуск элемента
+  }
+  console.log(i);
 }
