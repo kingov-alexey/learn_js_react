@@ -1,33 +1,20 @@
 'use strict';
 
-function showFerstMessage(a,b){
-  let result = a+b;
-  console.log('Hello world!'+result);
-}
+const str = 'test';
 
-showFerstMessage(4,5);
+console.log(str.length);
 
-function calc(a,b){
-  return (a+b);
-}
+const arr = [1,2,3];
 
-console.log(calc(4,3));
+console.log(str[2]);
 
-function ret(){
-  let num=50;
-  return num;
-}
+console.log(arr.length);
 
-const anotherNum = ret();
-console.log(anotherNum);
+const num = 12.2;
+console.log(Math.round(num));
 
+const test = "12.2px";
+console.log(parseInt(test));
 
-const logger = function(){
-  console.log('hello');
-};
-
-logger();
-
-const calc2 = (a,b)=>a+b;
-console.log(calc2(5,6));
+console.log(parseFloat(test));
 
