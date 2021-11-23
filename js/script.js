@@ -1,58 +1,30 @@
 'use strict';
 
-// let a = 5,
-//     b = a;
+// let str = 'some';
+// let strObj = new String(str);
 
-// b = b + 5;
+// console.log(typeof(str));
+// console.log(typeof(strObj));
 
-// console.log(a);
-// console.log(b);
+console.dir([1,2,3]);
 
-// const obj = {
-//   a: 5,
-//   b: 1
-// }
-
-// const copy = obj; //не присваивается а пеередается ссылка
-
-// copy.a=10;
-
-// console.log(obj);
-// console.log(copy);
-
-function copy(mainObj){
-  let objCopy = {}
-
-  let key;
-  for(key in mainObj){
-    objCopy[key]=mainObj[key];
-  }
-  return objCopy;
-}
-
-
-const numbers = {
-  a: 2,
-  b:5,
-  c: {
-    x:7,
-    y:4
+const soldier = {
+  health: 400,
+  armor: 100,
+  sayHello: function(){
+    console.log('hello');
   }
 };
 
-const newNumbers = copy(numbers);
+const jonh = Object.create(soldier);
 
-newNumbers.a = 10;
-newNumbers.c.x = 10;
+// const jonh = {
+//   health: 100
+// };
 
-console.log(newNumbers);
-console.log(numbers);
-
-const add = {
-  d: 17,
-  e: 20
-};
+//jonh.__proto__ = soldier; //устаревшее использование
+Object.setPrototypeOf(jonh,soldier); //новое использование
 
 
-console.log(Object.assign(numbers, add));
 
+jonh.sayHello();
