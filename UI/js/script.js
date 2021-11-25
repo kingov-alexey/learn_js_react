@@ -19,12 +19,37 @@ const movieDB = {
 };
 
 //1) Удалить все рекламные блоки со страницы (правая часть сайта)
-const adv = document.querySelector('.promo__adv');
-adv.remove();
+// const adv = document.querySelector('.promo__adv');
+// adv.remove();
+
+const adv2 = document.querySelectorAll('.promo__adv img');
+adv2.forEach(item => {
+  item.remove();
+});
 
 //2) Изменить жанр фильма, поменять "комедия" на "драма"
-const genre = document.querySelector('.promo__genre');
+// const genre = document.querySelector('.promo__genre');
+// genre.textContent = 'Драма';
+
+const poster = document.querySelector('.promo__bg');
+const genre = poster.querySelector('.promo__genre');
 genre.textContent = 'Драма';
+
+
 
 // 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
 // Реализовать только при помощи JS
+
+poster.style.backgroundImage = 'url("img/bg.jpg")';
+
+
+
+// 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+// Отсортировать их по алфавиту 
+
+const movieList = document.querySelectorAll('.promo__interactive-list');
+
+
+// 5) Добавить нумерацию выведенных фильмов 
+
+

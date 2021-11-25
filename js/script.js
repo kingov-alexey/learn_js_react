@@ -34,21 +34,26 @@ wrapper.appendChild(div);
 
 // wrapper.append(div);
 // wrapper.prepend(div);
-
+ 
 // hearts[0].before(div);
 // hearts[0].after(div);
 
 //wrapper.insertBefore(div, hearts[2]);
 
+//УДАЛЕНИЕ ЭЛЕМЕНТОВ
 //circles[0].remove();
 //wrapper.removeChild(hearts[1]);
 
+//ЗАМЕНА ЭЛЕМЕНТОВ
 //hearts[0].replaceWith(circles[0]);
 //wrapper.replaceChild(circles[0], hearts[0]);
 
+//ВСТАВКА HTML элементов. Не пренебрегать, исопльзоать по острой необходимости
 //div.innerHTML = 'hello world';
 div.innerHTML = '<h1>hello world</h1>';
 
-//div.textContent = 'hello';
+//Вставка текста
+div.textContent = 'hello';
 
+//вставка HTML в определенное место
 div.insertAdjacentHTML('beforebegin', '<h3>HELLO</h3>');
