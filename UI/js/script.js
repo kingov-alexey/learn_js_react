@@ -55,3 +55,36 @@ movieDB.movies.forEach((film, i) => {
 });
 
 // 5) Добавить нумерацию выведенных фильмов
+
+//
+
+////////////////////////////// 28
+const btn = document.querySelector('button');
+
+// btn.onclick = () => {
+//   alert('test');
+// };
+
+// btn.addEventListener('click', () => {
+//   alert('CLick');
+// });
+
+// btn.addEventListener('click', () => {
+//   alert('CLick11');
+// });
+
+// btn.addEventListener('mouseenter', (event) => {
+//   console.log('hover title');
+// });
+
+// const deleteBtn = event => {
+//   event.target.remove();
+// };
+
+// btn.addEventListener('clik', deleteBtn);
+
+// const link = document.getElementsByClassName('.promo__adv-title');
+// link[0].addEventListener('click', e => {
+//   //e.preventDefault();
+//   alert('что то произошло');
+// });
