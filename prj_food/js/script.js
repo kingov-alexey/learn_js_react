@@ -296,4 +296,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   /////end 4.5
+
+  //4.6 Промисы (Ничего не понял)
+  //
 });
