@@ -299,4 +299,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //4.6 Промисы (Ничего не понял)
   //
+
+  //4.7
+  //
 });
